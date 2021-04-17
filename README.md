@@ -5,14 +5,21 @@
 
 ### Motivation & Hypothesis 
 
-Question: Can machine learning models be used to predict if certain consumers will use coupons based on specific demographic features (i.e. age range, income bracket) ?
+#### Context: 
+Discount marketing and coupons are widely used promotional techniques
+The measurement of a consumer’s propensity towards coupon usage and the prediction of the redemption behaviour can be used to assess the effectiveness of marketing campaigns
 
-Hypotheses: 
+#### Question: Can machine learning models be used to predict if certain consumers will use coupons based on specific demographic features (i.e. age range, income bracket) ?
+
+#### Hypotheses: 
 We expected to see clear distinctions between customers:
 Older consumers use coupons more than younger consumers (40+)
 Consumers with a higher income use less coupons ($80k)
 Coupons marketed via email are more successful with a younger age group (<35)
 Coupons marketed via regular mail (flyers) are more successful with an older consumer 
+
+
+
 
 ### Preliminary Data Analysis 
 
@@ -20,15 +27,21 @@ Before we started cleaning our data and testing models, we took a quick glance a
 
 ![](Images/predata.jpeg)
 
-Initial Insights:
+#### Initial Insights:
 1. Consumers aged 46-55 use the most coupons 
 2. Most people using coupons are married 
 3. Most people using coupons are renting
 4. Wealthier consumers generally use less coupons 
 
+
+
+
 ### Snapshot of our Data
 
 ![](Images/snapshot.jpeg)
+
+
+
 
 ### Data Challenges
 
@@ -36,6 +49,8 @@ Initial Insights:
 2. Imbalanced Data: While using features importance and principle components analysis (PCA) we discovered that one of our features was responsible for predicting most of the variance from the model
 3. Slow Processing: Lots of computing power required for our notebooks. 
 GitHub unhappy with the size of our dataset (LFS - large file account storage required) resulting us reducing the size of our dataset.
+
+
 
 
 ### Model Evaluations - Random Forest 
@@ -51,6 +66,10 @@ GitHub unhappy with the size of our dataset (LFS - large file account storage re
 
 ![features](https://user-images.githubusercontent.com/74678703/115097804-49acb500-9efa-11eb-99af-493e275a7b7d.jpeg)
 
+
+
+
+
 ### Model Evaluation - K-Means Using Principal Component Analysis 
 
 - The second part of our project was to create customer segmentations, for this we used a K-means model hoping that we would get very clear clusters 
@@ -63,6 +82,7 @@ GitHub unhappy with the size of our dataset (LFS - large file account storage re
 
 
 ![kmeans](https://user-images.githubusercontent.com/74678703/115097775-297cf600-9efa-11eb-92a2-5f6eee4ea5c5.jpeg)
+
 
 - To help us understands our insights even further we wanted to see if we could reduce the number of variables we had without losing any information, so we ran a principal component analysis on our model. 
 - Through this we were able to identify that one variable in our datasets accounts for most of the variance, 16% 
@@ -86,11 +106,16 @@ GitHub unhappy with the size of our dataset (LFS - large file account storage re
 - As we did not have defined X and y features, the Silhouette Coefficient Score evaluation metric was performed using the model itself 
 - Higher Silhouette Coefficient score relates to a model with better defined, dense, well separated clusters. 
 
+
+
+
 #### Silhouette Score: 
 The silhouette score is calculated by taking the difference of the average distance between a data point and all other data points in the cluster it belongs to (a) & the minimum average distance from the data point to the clusters it does not belong to (b) all divided by the maximum of these two values.
 Experimenting with different numbers of clusters and analyzing the silhouette scores for them reveals for both models our optimum number of clusters is two. Refer to below table of results. 
 
 ![scores](https://user-images.githubusercontent.com/74678703/115097921-043cb780-9efb-11eb-9bc3-246474de6108.jpeg)
+
+
 
 
 ### Final Thoughts 
@@ -100,6 +125,8 @@ Experimenting with different numbers of clusters and analyzing the silhouette sc
 2. Unsupervised models are difficult to work with because we weren’t able to define our features although we had assumptions of what might be most relevant; instead we were running the entire dataset through the model allowing it to decide the features on its own. 
 
 3. Overall, we spent a lot of time trying to plot and interpret the outputs of our clustering models.
+
+
 
 
 ### Postmortem
