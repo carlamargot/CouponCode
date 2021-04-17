@@ -38,7 +38,8 @@ Before we started cleaning our data and testing models, we took a quick glance a
 
 ### Snapshot of our Data
 
-![](Images/snapshot.jpeg)
+![data<img width="1076" alt="Screen Shot 2021-04-17 at 2 46 40 PM" src="https://user-images.githubusercontent.com/73208140/115123601-d81d4700-9f8b-11eb-9886-9c4fbb8f5e81.png">
+]
 
 
 
