@@ -38,7 +38,11 @@ Before we started cleaning our data and testing models, we took a quick glance a
 
 ### Snapshot of our Data
 
+<<<<<<< HEAD
+![](Images/snapshot.jpeg)
+=======
 <img width="1076" alt="Screen Shot 2021-04-17 at 2 46 40 PM" src="https://user-images.githubusercontent.com/73208140/115123601-d81d4700-9f8b-11eb-9886-9c4fbb8f5e81.png">
+>>>>>>> 7c640e21e799a23b23abbb5d239de5d8aee3f1c5
 
 
 
@@ -88,19 +92,27 @@ GitHub unhappy with the size of our dataset (LFS - large file account storage re
 - Through this we were able to identify that one variable in our datasets accounts for most of the variance, 16% 
 - We calculated the PCA for the top 3 components to see if we could drop and unnecessary data and clean up our insights further
 
+<<<<<<< HEAD
+![pca](https://user-images.githubusercontent.com/74678703/115097827-68ab4700-9efa-11eb-8c10-de66a0921231.jpeg)
+=======
 <img width="435" alt="Screen Shot 2021-04-17 at 2 32 39 PM" src="https://user-images.githubusercontent.com/73208140/115123165-dce0fb80-9f89-11eb-81a7-d8e0ea163b8d.png">
 
+>>>>>>> 7c640e21e799a23b23abbb5d239de5d8aee3f1c5
 
 
 - We decided to plot the two PCA’s with the highest variance because we thought it would be a good approximation of what’s happening in the data 
 - Together these principal components account for 27% of the variance in the data which us not very high and thus makes it difficult to infer further insights 
 - Note: We changed the axes of PCA1 and PCA2 to make the separation of clusters easier to understand. However, we interpret this as some clustering happening but the results are inconclusive to us (see plot below). 
 
+<<<<<<< HEAD
+![pca2](https://user-images.githubusercontent.com/74678703/115097875-af00a600-9efa-11eb-9c6b-f20e734226ca.jpeg)
+=======
 <img width="410" alt="Screen Shot 2021-04-17 at 2 34 57 PM" src="https://user-images.githubusercontent.com/73208140/115123247-1a458900-9f8a-11eb-92ec-5b3f13a4240c.png">
 
 <img width="423" alt="Screen Shot 2021-04-17 at 2 35 39 PM" src="https://user-images.githubusercontent.com/73208140/115123275-3b0dde80-9f8a-11eb-8e4a-123fe365cba7.png">
 
 
+>>>>>>> 7c640e21e799a23b23abbb5d239de5d8aee3f1c5
 
 
 
@@ -118,8 +130,12 @@ GitHub unhappy with the size of our dataset (LFS - large file account storage re
 The silhouette score is calculated by taking the difference of the average distance between a data point and all other data points in the cluster it belongs to (a) & the minimum average distance from the data point to the clusters it does not belong to (b) all divided by the maximum of these two values.
 Experimenting with different numbers of clusters and analyzing the silhouette scores for them reveals for both models our optimum number of clusters is two. Refer to below table of results. 
 
+<<<<<<< HEAD
+![scores](https://user-images.githubusercontent.com/74678703/115097921-043cb780-9efb-11eb-9bc3-246474de6108.jpeg)
+=======
 <img width="441" alt="Screen Shot 2021-04-17 at 2 44 40 PM" src="https://user-images.githubusercontent.com/73208140/115123537-7eb51800-9f8b-11eb-811c-9ebe33ef61fe.png">
 
+>>>>>>> 7c640e21e799a23b23abbb5d239de5d8aee3f1c5
 
 
 
